@@ -19,7 +19,7 @@ deploy:
     only:
         - master
     script:
-        - git ftp push -v --syncroot web/ --user $FTP_DEPLOY_USER --passwd $FTP_DEPLOY_PASSWORD $FTP_DEPLOY_HOST
+        - git ftp push -v --syncroot public/ --user $FTP_DEPLOY_USER --passwd $FTP_DEPLOY_PASSWORD $FTP_DEPLOY_HOST
 ```
 
 License
