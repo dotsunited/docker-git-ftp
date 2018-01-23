@@ -8,7 +8,8 @@ via Continuous Delivery systems like GitLab Pipelines.
 Automatically build upon pushes to the master branch:
 https://hub.docker.com/r/dotsunited/git-ftp
 
-### Usage
+Usage
+-----
 
 Example `.gitlab-ci.yml` configuration:
 
