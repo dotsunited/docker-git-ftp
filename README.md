@@ -23,7 +23,7 @@ deploy_production:
   only:
     - master
   script:
-    - git ftp push -v --syncroot public/ --user $FTP_DEPLOY_USER --passwd $FTP_DEPLOY_PASSWORD $FTP_DEPLOY_HOST
+    - git ftp push -v --auto-init --syncroot public/ --user $FTP_DEPLOY_USER --passwd $FTP_DEPLOY_PASSWORD $FTP_DEPLOY_HOST
 ```
 
 Make sure, you configure the `$FTP_DEPLOY_USER`, `$FTP_DEPLOY_PASSWORD` and
