@@ -32,5 +32,5 @@ Make sure, you configure the `$FTP_DEPLOY_USER`, `$FTP_DEPLOY_PASSWORD` and
 License
 -------
 
-Copyright (c) 2017-2023 Dots United GmbH.
+Copyright (c) 2017-2024 Dots United GmbH.
 Released under the [MIT](LICENSE) license.
