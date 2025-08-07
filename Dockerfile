@@ -1,11 +1,11 @@
-FROM curlimages/curl-base:8.9.1
+FROM curlimages/curl-base:8.15.0
 
 # move libcurl files to /tmp, otherwise it will be overwritten by the apk add
 RUN mv /usr/lib/libcurl.so* /tmp
 
 RUN apk update --no-cache && \
     apk upgrade --no-cache && \
-    apk add bash git make --no-cache
+    apk add bash git make openssh openssh-client --no-cache
 
 # restore libcurl files
 RUN mv /tmp/libcurl.so* /usr/lib
